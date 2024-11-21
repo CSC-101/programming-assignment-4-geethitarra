@@ -37,3 +37,13 @@ class CountyDemographics:
                 self.population,
                 self.state
             )
+
+    def __str__(self):
+        return (
+            f"County: {self.county}, State: {self.state}\n"
+            f"Population Data: {self.population}\n"
+            f"Income Data: {self.income}\n"
+            f"Age Demographics: {self.age}\n"
+            f"Education Demographics: {self.education}\n"
+            f"Ethnicities: {self.ethnicities}\n"
+        )

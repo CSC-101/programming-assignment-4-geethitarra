@@ -1,5 +1,4 @@
 import county_demographics
-
 from data import CountyDemographics
 
 
@@ -38,3 +37,4 @@ def get_data() -> list[CountyDemographics]:
        report = county_demographics.get_report()
        _converted = [convert_county(county) for county in report]
     return _converted
+
